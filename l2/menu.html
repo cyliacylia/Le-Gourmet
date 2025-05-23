@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Le Gourmet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Le Gourmet</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu">
+        <div class="container">
+            <h1>Notre Menu</h1>
+            
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-tab="entrees">Entrées</button>
+                <button class="tab-btn" data-tab="plats">Plats Principaux</button>
+                <button class="tab-btn" data-tab="desserts">Desserts</button>
+                <button class="tab-btn" data-tab="boissons">Boissons</button>
+            </div>
+            
+            <div class="menu-content">
+                <!-- Entrées -->
+                <div class="menu-category active" id="entrees">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Soupe à l'oignon</h3>
+                            <p>Soupe traditionnelle française avec oignons caramélisés, croûtons et fromage gratiné.</p>
+                        </div>
+                        <div class="item-price">8€</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Terrine de campagne</h3>
+                            <p>Terrine maison servie avec des cornichons et du pain toasté.</p>
+                        </div>
+                        <div class="item-price">10€</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Salade de chèvre chaud</h3>
+                            <p>Salade verte avec noix, fromage de chèvre chaud et vinaigrette au miel.</p>
+                        </div>
+                        <div class="item-price">12€</div>
+                    </div>
+                </div>
+                
+                <!-- Plats Principaux -->
+                <div class="menu-category" id="plats">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Boeuf Bourguignon</h3>
+                            <p>Boeuf mijoté dans une sauce au vin rouge avec des légumes de saison.</p>
+                        </div>
+                        <div class="item-price">22€</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Risotto aux Champignons</h3>
+                            <p>Risotto crémeux préparé avec des champignons forestiers et parmesan.</p>
+                        </div>
+                        <div class="item-price">18€</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Poulet rôti</h3>
+                            <p>Poulet fermier rôti au four avec herbes de Provence et légumes rôtis.</p>
+                        </div>
+                        <div class="item-price">20€</div>
+                    </div>
+                </div>
+                
+                <!-- Desserts -->
+                <div class="menu-category" id="desserts">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Tarte Tatin</h3>
+                            <p>Tarte renversée aux pommes caramélisées, servie avec de la crème fraîche.</p>
+                        </div>
+                        <div class="item-price">8€</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Crème Brûlée</h3>
+                            <p>Crème vanille avec sa couche de sucre caramélisé.</p>
+                        </div>
+                        <div class="item-price">7€</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Profiteroles</h3>
+                            <p>Choux garnis de glace vanille et nappés de sauce chocolat.</p>
+                        </div>
+                        <div class="item-price">9€</div>
+                    </div>
+                </div>
+                
+                <!-- Boissons -->
+                <div class="menu-category" id="boissons">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Vin rouge (verre)</h3>
+                            <p>Sélection de vins rouges de la région.</p>
+                        </div>
+                        <div class="item-price">6€</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Vin blanc (verre)</h3>
+                            <p>Sélection de vins blancs de la région.</p>
+                        </div>
+                        <div class="item-price">6€</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Eau minérale</h3>
+                            <p>Plate ou gazeuse.</p>
+                        </div>
+                        <div class="item-price">3€</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Heures d'ouverture</h3>
+                    <p>Lundi - Vendredi: 11h - 22h</p>
+                    <p>Samedi - Dimanche: 10h - 23h</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>123 Rue Gourmet, Paris</p>
+                    <p>01 23 45 67 89</p>
+                    <p>contact@legourmet.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-links">
+                        <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Le Gourmet. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="style.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
